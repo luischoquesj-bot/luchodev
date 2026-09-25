@@ -67,28 +67,28 @@ POLÍTICA DE PRIVACIDAD Y CONTENIDO
       lastUpdated: 'Septiembre 2026 (Próximamente en Google Play)',
       privacyHtmlPath: 'privacy-quizz-esfm.html',
       privacyPolicyText: '''
-POLÍTICA DE PRIVACIDAD - QUIZZ ESFM
+POLÍTICAS DE PRIVACIDAD Y CONTENIDO
 Última actualización: Septiembre 2026
 
-Esta Política de Privacidad rige el tratamiento de la información para la aplicación móvil "Quizz ESFM", desarrollada por LuCho Dev.
+1. Propósito Educativo
+Quizz ESFM es una aplicación pedagógica e interactiva desarrollada con el objetivo de brindar apoyo, preparación y práctica a los postulantes para el examen de admisión a las Escuelas Superiores de Formación de Maestros (ESFM) y Unidades Académicas (UA) del Estado Plurinacional de Bolivia.
 
-1. RECOPILACIÓN Y FINALIDAD DE LOS DATOS
-"Quizz ESFM" es una plataforma lúdica y evaluativa orientada al aprendizaje dinámico. La aplicación no exige la introducción de datos personales sensibles. Las partidas, puntos obtenidos y configuraciones se resguardan en la memoria local de su dispositivo móvil.
+2. Ausencia de Recolección de Datos Personales
+Valoramos y respetamos plenamente su privacidad. Quizz ESFM NO recopila, no almacena ni solicita ningún dato de carácter personal. No es necesario registrarse, crear una cuenta, ni ingresar nombres, correos electrónicos, números telefónicos, contraseñas o datos de pago para utilizar las funciones de la aplicación.
 
-2. REDES DE ANUNCIOS (GOOGLE ADMOB)
-La aplicación incorpora anuncios servidos por Google AdMob con el objetivo de mantener la disponibilidad del servicio. Google AdMob puede recopilar identificadores de publicidad del dispositivo (AAID/IDFA) e información de interacción técnica con los anuncios para garantizar su adecuada entrega y evitar fraudes publicitarios. Para detalles sobre cómo gestiona Google esta información, consulte:
-https://policies.google.com/technologies/ads
+3. Almacenamiento Local del Progreso
+Todo su historial de estudio, estadísticas de aciertos, respuestas seleccionadas y configuración de la app se guardan única y exclusivamente en el almacenamiento local de su propio dispositivo (mediante SQLite / SharedPreferences). Esta información nunca es transmitida, vendida ni sincronizada con servidores externos propios.
 
-3. PROTECCIÓN DE MENORES Y FAMILIAS
-El contenido de "Quizz ESFM" es enteramente educativo y cumple con las directrices de la Política de Familias de Google Play. No recopilamos conscientemente datos de menores de 13 años.
+4. Publicidad y Servicios de Google AdMob
+Para permitir que esta herramienta educativa continúe siendo completamente gratuita para todos los aspirantes, la aplicación integra los servicios publicitarios de Google AdMob.
 
-4. ELIMINACIÓN DE DATOS Y DERECHOS DEL USUARIO
-Usted puede reiniciar y eliminar cualquier registro de partidas en cualquier instante borrando los datos de la app o desinstalándola de su dispositivo móvil. Si desea remitir una solicitud formal de eliminación de datos técnicos o aclaración de privacidad:
-Correo: luischoque.sj@gmail.com
+Google AdMob puede recopilar y procesar identificadores técnicos de publicidad (como el Advertising ID de Android) e información general del dispositivo para mostrar anuncios relevantes (banners, intersticiales, bonificados y nativos) conforme a las Políticas de Privacidad de Google (policies.google.com/privacy). El usuario puede restablecer o limitar el seguimiento de anuncios desde los ajustes de su dispositivo.
 
-5. CONTACTO Y SOPORTE
-Desarrollador: LuCho Dev
-Correo oficial de contacto y soporte: luischoque.sj@gmail.com
+5. Seguridad y Menores de Edad
+El contenido de la aplicación está enfocado exclusivamente en materias académicas (comprensión lectora, razonamiento lógico, conocimientos generales y habilidades socioemocionales) y es seguro para personas de todas las edades. No contiene material explícito ni perjudicial.
+
+6. Cambios y Contacto
+Cualquier actualización en estas políticas de privacidad será notificada y actualizada dentro de la aplicación. Para dudas o consultas, puede contactarnos a través de los canales oficiales disponibles en la tienda Google Play Store.
 ''',
     ),
   ];
