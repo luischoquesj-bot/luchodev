@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicitud de Eliminación de Datos (User Data Deletion) oficial de LuCho Dev en conformidad con las Políticas de Privacidad Móvil (Google Play & Apple App Store).">
+  <title>Solicitud de Eliminación de Datos | LuCho Dev</title>
+  
+  <link rel="icon" type="image/png" href="favicon.png?v=3"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0F172A;
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(2, 132, 199, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 85% 75%, rgba(99, 102, 241, 0.12) 0%, transparent 45%);
+      color: #334155;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 16px 36px 16px;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 36px 32px 48px 32px;
+      }
+    }
+
+    .page-wrapper {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Top Navigation bar */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      background: #1E293B;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 12px;
+      color: #38BDF8;
+      font-size: 13.5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back:hover {
+      background: rgba(2, 132, 199, 0.25);
+      border-color: #38BDF8;
+      color: #FFFFFF;
+      transform: translateX(-2px);
+    }
+
+    .brand-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Main Container Card (Crisp White Card on Dark Background) */
+    .deletion-card {
+      background-color: #FFFFFF;
+      border: 1.5px solid rgba(56, 189, 248, 0.35);
+      border-radius: 24px;
+      box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.05);
+      padding: 24px;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .deletion-card {
+        padding: 36px;
+      }
+    }
+
+    /* Section Title & Badge */
+    .section-title-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .icon-badge {
+      padding: 10px;
+      background-color: rgba(2, 132, 199, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0284C7;
+      flex-shrink: 0;
+    }
+
+    .title-texts {
+      margin-left: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title-texts h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0F172A;
+      line-height: 1.25;
+    }
+
+    @media (min-width: 768px) {
+      .title-texts h1 {
+        font-size: 22px;
+      }
+    }
+
+    .title-texts p {
+      font-size: 12.5px;
+      color: #64748B;
+      margin-top: 2px;
+    }
+
+    /* Explanation Paragraph */
+    .explanation-text {
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* Steps Grid */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    @media (min-width: 720px) {
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .step-card {
+      background-color: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .step-card:hover {
+      border-color: #93C5FD;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08);
+    }
+
+    .step-number-circle {
+      width: 28px;
+      height: 28px;
+      background-color: rgba(2, 132, 199, 0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #0284C7;
+      margin-bottom: 12px;
+    }
+
+    .step-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #0F172A;
+      margin-bottom: 8px;
+    }
+
+    .step-description {
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.55;
+    }
+
+    /* Action Callout */
+    .action-callout {
+      background-color: #F0F9FF;
+      border: 1.5px solid #BAE6FD;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .callout-content-desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .callout-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .callout-email-text {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #0369A1;
+      margin-left: 14px;
+    }
+
+    .btn-send {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #0284C7;
+      color: #FFFFFF;
+      font-size: 13.5px;
+      font-weight: 600;
+      border-radius: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+      cursor: pointer;
+    }
+
+    .btn-send:hover {
+      background-color: #0369A1;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+    }
+
+    /* Shimmer effect with pointer-events: none to avoid blocking clicks */
+    .btn-send::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      pointer-events: none;
+      background: linear-gradient(
+        60deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      );
+      transform: rotate(25deg);
+      animation: shimmer 2.2s infinite;
+    }
+
+    .btn-send * {
+      pointer-events: none;
+    }
+
+    @keyframes shimmer {
+      0% { transform: translateX(-100%) rotate(25deg); }
+      100% { transform: translateX(100%) rotate(25deg); }
+    }
+
+    /* Mobile callout layout */
+    .callout-mobile {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .callout-mobile-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .callout-mobile-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .callout-content-desktop {
+        display: none;
+      }
+      .callout-mobile {
+        display: flex;
+      }
+    }
+
+    /* Footer copy */
+    .page-footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 12px;
+      color: #94A3B8;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav class="top-nav">
+      <a href="/" class="btn-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Volver a LuCho Dev
+      </a>
+      <div class="brand-title">
+        LuCho Dev
+      </div>
+    </nav>
+
+    <!-- MAIN CARD -->
+    <section class="deletion-card">
+      <!-- Section Title & Badge -->
+      <div class="section-title-row">
+        <div class="icon-badge">
+          <!-- delete_sweep_rounded icon -->
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15 16h4v2h-4zm0-8h7v2h-7zm0 4h6v2h-6zM3 18c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V8H3v10zm2-8h6v8H5v-8zm5-6H6L5 5H2v2h12V5h-3z"/>
+          </svg>
+        </div>
+        <div class="title-texts">
+          <h1>Solicitud de Eliminación de Datos (User Data Deletion)</h1>
+          <p>Conformidad con las Políticas de Privacidad Móvil (Google Play &amp; Apple App Store)</p>
+        </div>
+      </div>
+
+      <!-- Explanation -->
+      <p class="explanation-text">
+        En LuCho Dev respetamos su privacidad y soberanía de datos digitales. Nuestras aplicaciones móviles (Android e iOS) están concebidas bajo el principio de minimización de datos: no requieren creación forzosa de perfiles personales ni recolectan credenciales confidenciales en servidores externos. No obstante, ponemos a su disposición los siguientes mecanismos formales para la supresión de registros:
+      </p>
+
+      <!-- Steps Grid -->
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number-circle">1</div>
+          <h2 class="step-title">Eliminación Local Inmediata</h2>
+          <p class="step-description">
+            En su dispositivo móvil (Android: Ajustes &gt; Aplicaciones &gt; [App] &gt; Almacenamiento &gt; "Borrar datos". iOS: Ajustes &gt; General &gt; Espacio en iPhone &gt; Desinstalar o borrar datos). Esto suprimirá de inmediato todo progreso y caché.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number-circle">2</div>
+          <h2 class="step-title">Restablecer ID Publicitario</h2>
+          <p class="step-description">
+            Para desvincular identificadores analíticos o publicitarios de AdMob: En Android (Ajustes de Google &gt; Anuncios &gt; "Restablecer ID"). En iOS (Ajustes &gt; Privacidad y seguridad &gt; Seguimiento &gt; Desactivar permisos).
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number-circle">3</div>
+          <h2 class="step-title">Solicitud Directa por Correo</h2>
+          <p class="step-description">
+            Envíenos un mensaje solicitando asistencia técnica o confirmación de supresión de datos. Procesamos y respondemos cada petición en un plazo no mayor a 48 a 72 horas hábiles.
+          </p>
+        </div>
+      </div>
+
+      <!-- Action Callout -->
+      <div class="action-callout">
+        <!-- Desktop view (>768px) -->
+        <div class="callout-content-desktop">
+          <div class="callout-left">
+            <!-- mark_email_read_outlined icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span class="callout-email-text">Canal oficial de privacidad: luischoque.sj@gmail.com</span>
+          </div>
+          <a href="mailto:luischoque.sj@gmail.com?subject=Solicitud%20de%20Eliminacion%20de%20Datos" class="btn-send">
+            <!-- send_rounded icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+            Enviar Solicitud
+          </a>
+        </div>
+
+        <!-- Mobile view (<=768px) -->
+        <div class="callout-mobile">
+          <div class="callout-mobile-row">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span class="callout-email-text" style="margin-left: 0;">luischoque.sj@gmail.com</span>
+          </div>
+          <a href="mailto:luischoque.sj@gmail.com?subject=Solicitud%20de%20Eliminacion%20de%20Datos" class="btn-send callout-mobile-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+            Enviar Solicitud
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>&copy; 2026 LuCho Dev. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      var gmailFallbackUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=luischoque.sj@gmail.com&su=Solicitud%20de%20Eliminacion%20de%20Datos';
+      var buttons = document.querySelectorAll('.btn-send');
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          var lostFocus = false;
+
+          function handleBlur() {
+            lostFocus = true;
+            window.removeEventListener('blur', handleBlur);
+          }
+
+          window.addEventListener('blur', handleBlur, { once: true });
+
+          setTimeout(function() {
+            window.removeEventListener('blur', handleBlur);
+            // Si tras 300 ms la ventana sigue en foco, el sistema no abrió una aplicación externa;
+            // cargamos Gmail Web en la misma pestaña sin abrir ventanas externas
+            if (!lostFocus && document.hasFocus()) {
+              window.location.href = gmailFallbackUrl;
+            }
+          }, 300);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
